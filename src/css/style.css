@@ -9,18 +9,17 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "body-font-family";
 }
 
 body {
     margin: 0;
     overflow:hidden;
-    background: #0003de;
+    background: #c59e33;
 } 
  header{
   text-align: center;
 }
-
 
 h3 {
   color: white;
@@ -55,56 +54,17 @@ img {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.title{
+  top:100px;
+  height: 100px;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   grid-gap: 2rem;
   margin: 2rem;
 }
-
-/* demo purposes only */
-
-.card {
-  height: 215px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.card:hover {
-  transform: scale(1.035, 1.035);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-}
-
-.card:hover img {
-  transform: translateY(-10px);
-}
-
-.img-oil{
-  width: 760px;
-}
-
-.logo {
-  height: 70px;
-  width: 70px;
-  right: 70px ;
-}
-
-.logo-basket {
-  height: 70px;
-  width: 70px;
-  right: 160px ;
-}
-
-.personal-office{
-  color: black;
-  width: 100px;
-}
-
 
 #content {
   position: absolute;
@@ -272,26 +232,61 @@ a.rollover {
   margin-bottom: 25px;
 }
 
-#style-7::-webkit-scrollbar-track
+.force-overflow
 {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #F5F5F5;
-  border-radius: 10px;
+  min-height: 450px;
 }
 
-#style-7::-webkit-scrollbar
+#wrapper
+{
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+
+#style-8::-webkit-scrollbar-track
+{
+  border: 1px solid black;
+  background-color: #858181;
+}
+
+#style-8::-webkit-scrollbar
 {
   width: 10px;
-  background-color: #F5F5F5;
+  background-color: #000000;
 }
 
-#style-7::-webkit-scrollbar-thumb
+#style-8::-webkit-scrollbar-thumb
 {
-  border-radius: 10px;
-  background-color: #0003de;
+  background-color: #000000;  
+}
+/*Scrool enauph*/
+
+/*Anim background*/
+
+#particles-js {
+  position: fixed;
+  top:0 ;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 1;
 }
 
+#page-wrapper{
+  position: relative;
+  z-index: 2;
+  background-color: aquamarine;
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  min-height: 3000px;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
 
+/*Anim background enouph*/
 @media screen and (max-width: 420px) {
   .container{
     margin: 0;
